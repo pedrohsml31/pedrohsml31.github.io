@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Financeiro Pro</title>
+<meta name="description" content="Como o Financeiro Pro usa o acesso somente leitura ao Gmail.">
+<style>
+  :root { --tx: #1e293b; --fr: #f8fafc; --lk: #1d4ed8; --mu: #64748b; }
+  @media (prefers-color-scheme: dark) { :root { --tx: #e2e8f0; --fr: #0f172a; --lk: #93c5fd; --mu: #94a3b8; } }
+  body { margin: 0; background: var(--fr); color: var(--tx); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  p.sub, footer { color: var(--mu); }
+  a { color: var(--lk); }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">Financeiro Pro — aplicativo pessoal de controle financeiro · vigente desde outubro de 2026</p>
+
+  <h2>1. O que é o Financeiro Pro</h2>
+  <p>Um aplicativo pessoal, executado no computador do próprio usuário. Não é um serviço comercial,
+     não é oferecido ao público e não tem usuários além do seu autor.</p>
+
+  <h2>2. Acesso ao Gmail</h2>
+  <ul>
+    <li>O acesso é <strong>somente leitura</strong>, pelo escopo <code>https://www.googleapis.com/auth/gmail.readonly</code>.
+        O aplicativo não envia, apaga, move nem altera e-mails.</li>
+    <li>São lidos <strong>apenas os e-mails necessários às funções financeiras</strong>: confirmações de compra de
+        marketplaces (como Amazon, Mercado Livre e Shopee) e e-mails do banco com o extrato ou a fatura do cartão em anexo.
+        As buscas são restritas a esses remetentes e assuntos; a caixa não é lida por inteiro.</li>
+    <li>De cada e-mail de compra, o aplicativo extrai só o necessário para identificar a compra (por exemplo: produto,
+        data, valor e número do pedido). <strong>O corpo integral do e-mail não é armazenado</strong>.</li>
+    <li>Anexos financeiros (extrato ou fatura em PDF) são salvos apenas na pasta local do próprio usuário, para
+        a importação que ele já faz manualmente.</li>
+  </ul>
+
+  <h2>3. Onde os dados ficam</h2>
+  <ul>
+    <li>O processamento é feito <strong>principalmente no computador do usuário</strong>. Os dados ficam num banco local.</li>
+    <li>O token de autorização do Google (OAuth) fica <strong>cifrado localmente</strong>, protegido pela conta do usuário
+        no sistema operacional. Ele não é enviado a terceiros.</li>
+    <li>Quando o usuário ativa a sugestão de categoria por IA, apenas um trecho mínimo e sem dados pessoais
+        (por exemplo, o nome do produto) pode ser enviado ao provedor de IA escolhido; nunca o e-mail inteiro.</li>
+  </ul>
+
+  <h2>4. O que nunca é feito</h2>
+  <ul>
+    <li>Os dados do Gmail <strong>não são vendidos</strong>, alugados nem compartilhados com terceiros.</li>
+    <li>Os dados <strong>não são usados para publicidade</strong> nem para criar perfis de anúncios.</li>
+    <li>Nenhuma pessoa além do próprio usuário tem acesso aos dados.</li>
+  </ul>
+
+  <h2>5. Uso limitado (Google API Services)</h2>
+  <p>O uso e a transferência, pelo Financeiro Pro, de informações recebidas das APIs do Google seguem a
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>,
+     incluindo os requisitos de Uso Limitado.</p>
+
+  <h2>6. Como desconectar</h2>
+  <p>O acesso pode ser encerrado a qualquer momento: pelo botão “desconectar” do próprio aplicativo, que apaga o token local,
+     ou removendo o Financeiro Pro em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>7. Alterações</h2>
+  <p>Mudanças nesta política serão publicadas nesta página, com a data de vigência atualizada.</p>
+
+  <footer><a href="index.html">← Financeiro Pro</a></footer>
+</main>
+</body>
+</html>
