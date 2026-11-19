@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone-backup-pedro</title>
+<meta name="description" content="rclone-backup-pedro — backup pessoal criptografado.">
+<style>
+  :root { --tx: #1e293b; --fr: #f8fafc; --lk: #1d4ed8; --mu: #64748b; }
+  @media (prefers-color-scheme: dark) { :root { --tx: #e2e8f0; --fr: #0f172a; --lk: #93c5fd; --mu: #94a3b8; } }
+  body { margin: 0; background: var(--fr); color: var(--tx); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  p.sub { color: var(--mu); margin-top: 0; }
+  a { color: var(--lk); }
+  footer { margin-top: 3rem; color: var(--mu); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>rclone-backup-pedro</h1>
+  <p class="sub">Backup pessoal criptografado no Google Drive</p>
+
+  <p>O rclone-backup-pedro é a configuração <strong>pessoal</strong> que o dono deste site usa para guardar,
+     uma vez por dia, uma cópia de segurança <strong>criptografada</strong> dos dados dos próprios programas
+     no próprio Google Drive. A cópia é feita pela ferramenta de código aberto
+     <a href="https://rclone.org/">rclone</a> junto com o <a href="https://restic.net/">restic</a>,
+     rodando no computador do próprio usuário.</p>
+
+  <p>O acesso ao Drive usa só o escopo <code>drive.file</code>: o app enxerga e altera
+     <strong>apenas os arquivos que ele mesmo criou</strong> (a pasta do backup), e nenhum outro arquivo do Drive.</p>
+
+  <p>Não é um serviço: não tem cadastro, não é oferecido ao público, não vende nada e não exibe publicidade.</p>
+
+  <p><a href="privacidade.html">Política de Privacidade</a></p>
+
+  <footer>rclone-backup-pedro — uso pessoal.</footer>
+</main>
+</body>
+</html>
